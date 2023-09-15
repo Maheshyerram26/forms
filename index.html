@@ -7,9 +7,45 @@
 </head>
 <body>
     <h1>forms</h1>
-   <form>
-    <input type="text">
-    <input type="submit">
+    <fieldset> <legend>personal deatils </legend>
+         <label for="nm">Name*</label>
+        <input type="text" id="nm" required >
+    <br><br>
+         <label for="m">Email</label>
+         <input type="text" placeholder="enter ur email" id="m" /> <br><br>
+         <label for="pwd">password</label>
+        <input type="password" placeholder="password" id="pwd"></fieldset>
+   <form action="action.php" method="get">
+   <br><br>
+    <input type="radio" name="r" id="rmale">
+    <label for="rmale">male</label>
+    <input type="radio" name="r" id="rfemale">
+    <label for="rfemale">female</label><br>
+    <input type="checkbox" name="skills" id="html">
+    <label for="html">HTML</label>
+    <input type="checkbox" name="skills" id="css">
+    <label for="css">CSS</label>
+    <input type="checkbox" name="skill" id="js">
+    <label for="js">JAVA script</label><br><br>
+    <input type="color" name="" id="cl">
+    <label for="cl">color</label><br><br>
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date"><br><br>
+    <label for="tm">Time</label>
+    <input type="time" name="time" id="tm"><input type="datetime-local" name="" id=""><br><br>
+    <input type="file" ><br><br>
+    <label for="nbr">Mobile nbr:</label>
+    <input type="number" name="number" id="nbr"><br><br>
+    <select name="mobiles" id="mb" >
+         <option value="honor">honor</option>
+        <option value="realme">realme</option>
+        <option value="redmi">redmi</option>
+    </select>
+<br><br>
+<input type="search" name="search" value="search" id="sh"><br><br>
+  <input type="reset" value="reset"> 
+  <input type="submit" value="submit">
    </form>
 </body>
-</html>
+</html>   
+    
